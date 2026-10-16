@@ -6,7 +6,9 @@ Each test:
 * requires execution of only a single instruction; and
 * provides full processor and memory state before and after.
 
-20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated mode. All tests assume a full 16mb of RAM is available to the processor and that the machine is using a single address space.
+Ordinarily, 20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated mode. The exceptions are `MVN` and `MVP` — only 200 tests are provided for each of those, and the copied length is restricted to at most 1,000 bytes, due to practicality concerns.
+
+All tests assume a full 16mb of RAM is available to the processor and that the machine is using a single address space.
 
 ## Sample Test
 
